@@ -1,1 +1,1 @@
-web: gunicorn manage:app  --log-level=debug
+web: gunicorn run  --log-level=debug
