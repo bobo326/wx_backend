@@ -1,4 +1,4 @@
-from flask import Flask, Response, request
+from flask import Flask, request
 
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Column, Integer, String
