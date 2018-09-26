@@ -12,3 +12,5 @@ heroku pg:psql（+数据库名）  访问postgresql的命令行界面（当有�
 另外，通过github进行同步更新部署，不需要切换APP，即你在哪个项目目录进行文件修改更新，它会自动推送到heroku的git仓库(git push heroku master)
 
 heroku run python manage.py db init/migrate/upgrade（从而操作数据库）
+
+最后 ，务必安装gunicorn包
