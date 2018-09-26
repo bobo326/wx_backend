@@ -1,0 +1,12 @@
+heroku login:登陆heroku账户
+
+heroku create [app名字] 创建新的应用
+
+heroku addons:create heroku-postgresql:hobby-dev  创建新的postgresql数据库, (hobby-dev【还有一种是hobby-basic】是创建数据库的用处【hobby使然】)
+
+heroku git:remote --app wxlogin  关联heroku仓库，通过git remote -v可以看出关联github和heroku仓库
+git push heroku master
+
+heroku pg:psql（+数据库名）  访问postgresql的命令行界面（当有多个数据库 可以指定）
+
+另外，通过github进行同步更新部署，不需要切换APP，即你在哪个项目目录进行文件修改更新，它会自动推送到heroku的git仓库(git push heroku master)
